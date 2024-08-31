@@ -1,0 +1,105 @@
+/* Cart.css */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1rem;
+    text-align: left;
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  thead {
+    background-color: #f2f2f2;
+  }
+  
+  td img {
+    border-radius: 5px;
+  }
+  /*
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  
+  button:hover {
+    background-color: #0056b3;
+  }*/
+  
+  tfoot td {
+    font-weight: bold;
+    text-align: right;
+  }
+  
+  
+  .GooglePayButton {
+    display: inline-block;
+  }
+
+
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+      display: block;
+      width: 100%;
+    }
+  
+    thead {
+      display: none;
+    }
+  
+    tr {
+      margin-bottom: 15px;
+    }
+  
+    td {
+      padding: 10px;
+      text-align: right;
+      position: relative;
+      border: none;
+      border-bottom: 1px solid #ddd;
+    }
+  
+    td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 10px;
+      width: calc(100% - 20px);
+      text-align: left;
+      font-weight: bold;
+    }
+  
+    td img {
+      height: 50px;
+      width: 50px;
+    }
+  
+    .GooglePayButton {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    td {
+      padding: 8px;
+    }
+  
+    td img {
+      height: 40px;
+      width: 40px;
+    }
+  
+    button {
+      padding: 5px 8px;
+    }
+  }
+  

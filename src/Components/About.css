@@ -1,0 +1,72 @@
+/* About.css */
+
+.About {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .right, .left {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  .right img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .left h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .left p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1024px) {
+    .About {
+      flex-direction: column;
+    }
+  
+    .right, .left {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    .left h1 {
+      font-size: 1.8rem;
+    }
+  
+    .left p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .left h1 {
+      font-size: 1.6rem;
+    }
+  
+    .left p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .left h1 {
+      font-size: 1.4rem;
+    }
+  
+    .left p {
+      font-size: 0.8rem;
+    }
+  }
+  

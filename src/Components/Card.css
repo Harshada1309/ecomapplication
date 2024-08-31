@@ -1,0 +1,114 @@
+/* Card.css */
+
+
+.Box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .card img {
+    border-radius: 10px;
+  }
+
+  /* Image hover effect */
+.card:hover img {
+  opacity: 0.8; /* Slightly fade the image on hover */
+}
+  
+  .card h5 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+
+  /* Hover effect for the card */
+.card:hover {
+  transform: scale(1.05); /* Slightly zoom in */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+  
+  .card button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  .card button:hover {
+    background-color: #0056b3;
+  }
+  
+  .card .description {
+    text-align: left;
+    margin-top: 10px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .Box {
+      margin: 10px;
+    }
+  
+    .card {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    .card h5 {
+      font-size: 1.3rem;
+    }
+  
+    .card p {
+      font-size: 0.9rem;
+    }
+  
+    .card button {
+      padding: 8px 10px;
+      margin: 3px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .Box {
+      margin: 5px;
+    }
+  
+    .card {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .card h5 {
+      font-size: 1.1rem;
+    }
+  
+    .card p {
+      font-size: 0.8rem;
+    }
+  
+    .card button {
+      padding: 5px 8px;
+      margin: 2px;
+    }
+  }
+  
